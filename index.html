@@ -1,0 +1,390 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8"/>
+        <title>Galin Works Ltd</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="style.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"/>
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css">
+        <link href='https://unpkg.com/boxicons@2.1.2/css/boxicons.min.css' rel='stylesheet'>
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+        <!-- Linking Google Fonts for Icons -->
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Rounded:opsz,wght,FILL,GRAD@24,200,0,0" />
+        <!-- Linking Swiper CSS -->
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css">
+        <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
+        <script defer src="index.js"></script>
+    </head>
+    
+
+    <body>
+    
+    
+<!--HEADER SECTION------------------------------------------------------------------------------------------
+------------------------------------------------------------------------------------------------------------ -->
+
+        
+        <div id="header" class="header">
+            <div class="header-bar">
+                <div class="logo">
+                    <a href="index.html">
+                        <img src="Images/WebLogo.png">
+                    </a>
+                    <div class="name">
+                        <h1><a href="index.html">Galin <span>Works Ltd</span></a></h1>
+                    </div>
+                </div>
+            
+                <div class="navbar">
+                    <input type="checkbox" class="toggle-menu">
+                    <div class="hamburger"></div>
+                    
+                    <div class="menu">
+                        <li><a href="index.html" class="home">Home</a></li>
+                        <li><a href="About.html" class="about">About Us</a></li>
+                        <li><a href="Services.html" class="services">Our Services</a></li>
+                        <li><a href="Projects.html" class="projects">Projects</a></li>
+                        <li><a href="Contacts.html" class="contacts">Contact Us</a></li>
+                    </div>
+                </div>
+            </div>
+
+            <div class="contact-number">
+                <div class="phone">
+                    <span class="fas fa-phone-alt"></span>
+                    <span class="text">+254 (0) 725 770 167 or +254 (0) 721 949 591</span>
+                </div>
+            </div>
+        </div>
+
+
+
+<!--SLIDER SECTION -------------------------------------------------------------------------------------------
+-------------------------------------------------------------------------------------------------------------- -->
+
+
+
+        <div class="slider-container">
+            <!-- Slider List Items -->
+            <div class="slider-wrapper swiper-wrapper">
+              <div class="slider-item swiper-slide">
+                <div class="slide-content">
+                  <!-- <h3 class="slide-subtitle">Slide 01</h3> -->
+                  <h2 class="slide-title">We shape <br>our <span>buildings</span>; thereafter, they <span>shape us.</span></h2>
+                  <p class="slide-description">We bring your ideal house idea to life.</p>
+                  <p class="slide-button"><span>Design • Construction • Consultation • Project Management</span></p>
+                </div>
+              </div>
+              <div class="slider-item swiper-slide">
+                <div class="slide-content">
+                  <!-- <h3 class="slide-subtitle">Slide 02</h3> -->
+                  <h2 class="slide-title">We build <span>not</span> just a house, we create a <span>peace of mind.</span></h2>
+                  <p class="slide-description">We design your house in accordance to customer specifications</p>
+                  <p class="slide-button"><span>Design • Construction • Consultation • Project Management</span></p>
+                </div>
+              </div>
+              <div class="slider-item swiper-slide">
+                <div class="slide-content">
+                  <!-- <h3 class="slide-subtitle">Slide 03</h3> -->
+                  <h2 class="slide-title">Construct, <span>Design</span> and <span>Innovate.</span></h2>
+                  <p class="slide-description">Inclusivity of qualified workers, proper equipment and cutting edge technology is what makes us number one.</p>
+                  <p class="slide-button"><span>Design • Construction • Consultation • Project Management</span></p>
+                </div>
+              </div>
+              <div class="slider-item swiper-slide">
+                <div class="slide-content">
+                  <!-- <h3 class="slide-subtitle">Slide 04</h3> -->
+                  <h2 class="slide-title">Where you step on, <span>can't break</span>. We made it <span>strong</span>.</h2>
+                  <p class="slide-description">With top notch equipment and skilled personnel to handle your construction.</p>
+                  <p class="slide-button"><span>Design • Construction • Consultation • Project Management</span></p>
+                </div>
+              </div>
+              <div class="slider-item swiper-slide">
+                <div class="slide-content">
+                  <!-- <h3 class="slide-subtitle">Slide 05</h3> -->
+                  <h2 class="slide-title">A building is only as <span>strong</span> as the <span>hands</span> that built it.</h2>
+                  <p class="slide-description">We provide carefully crafted designs for your construction needs.</p>
+                  <p class="slide-button"><span>Design • Construction • Consultation • Project Management</span></p>
+                </div>
+              </div>
+            </div>
+
+            <!-- Slider Pagination -->
+                         
+            <div class="slider-controls">
+              <ul class="slider-pagination">
+                <div class="slider-indicator"></div>
+                <li class="slider-tab current"></li>
+                <li class="slider-tab"></li>
+                <li class="slider-tab"></li>
+                <li class="slider-tab"></li>
+                <li class="slider-tab"></li>
+              </ul>
+            </div> 
+
+            <!-- Slider Navigations (Prev/Next) -->
+            <div class="slider-navigations">
+              <button id="slide-prev" class="material-symbols-rounded">arrow_left_alt</button>
+              <button id="slide-next" class="material-symbols-rounded">arrow_right_alt</button>
+            </div>
+
+            <div class="slider-side-img">
+                <img src="Images/Slider-Side-img.png" alt="">
+            </div>
+        </div>
+        
+        <!-- Linking Swiper Script -->
+        <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+
+        <!-- Linking Custom Script -->
+        <!-- <script src="script.js"></script> -->
+
+        
+
+
+<!--ABOUT SECTION ------------------------------------------------------------------------------------------
+------------------------------------------------------------------------------------------------------------ -->
+
+
+        <section class="about-container">
+            <div class="about">
+              <img src="Images/Gallery/bkg-2.jpg" alt="">
+              <div class="about-content">
+                <div class="about-title">
+                  <h2><span>About</span> Us</h2>
+                </div>
+                <h3>Who we are</h3>
+                <p> Founded in 2002, <span>Galin Works Limited</span> has grown into a trusted leader in the construction industry, 
+                    earning a reputation for excellence, integrity, and innovation. With over two decades of experience, 
+                    we have delivered numerous high-quality residential, commercial, industrial, and infrastructure projects across the region, 
+                    consistentl...
+                </p>
+
+                <div class="home-about-btn">
+                  <a href="About.html" class="about-btn">Read More</a>
+                </div>
+              </div>
+            </div>
+        </section>
+
+
+
+<!-- SERVICES SECTION --------------------------------------------------------------------------------------
+ ----------------------------------------------------------------------------------------------------------- -->
+
+ 
+        <section class="home-services">
+
+          <!-- Home Services Content -->
+
+          <div class="home-services-content">
+            <div class="home-about-title">
+                <h2><span>Construction •</span> EXPERTS</h2>
+            </div>
+
+            <div class="details-categories">
+              <div class="details-cat">
+                <img src="Images/Icons/home.png" alt="">
+                <p><span>Residential Homes</span> <br>For your Ideal Home, we make your dream come true.</p>
+              </div>
+
+              <div class="details-cat">
+                <img src="Images/Icons/apartments.png" alt="">
+                <p><span>Commercial Buildings</span> <br>You want to turn your plot of land to a business?</p>
+              </div>
+
+              <div class="details-cat">
+                <img src="Images/Icons/traffic-barrier.png" alt="">
+                <p><span>Road Works</span> <br>Transform that path to a highway. We got you covered.</p>
+              </div>
+
+            </div>
+          </div>
+
+          <!-- Home Services image -->
+           
+          <div class="home-services-img">
+            <img src="Images/Gallery/bkg-7.jpg" alt="">
+            <div class="home-services-textbox">
+              <p><span>At Galin Works Ltd</span> <br>What we Do</p>
+            </div>
+          </div>
+        </section>
+
+
+<!-- Home Services Details---------------------------------------------------------------------------------- -->
+
+      <div class="home-services-details-container">
+
+      
+        <section class="home-services-details">
+            <div class="home-about-title">
+              <h2><span>Our</span> Services</h2>
+            </div>
+
+            <div class="details-info">
+              <div class="details">
+                <div class="details-image">
+                  <img src="Images/Icons/design.png" alt="">
+                </div>
+                <h2>Design</h2>
+                <p>Renovations, refurbishment and complete new projects build designs. </p>
+              </div>
+
+              <div class="details">
+                <div class="details-image">
+                  <img src="Images/Icons/helmet.png" alt="">
+                </div>
+                <h2>Construction</h2>
+                <p>Foundation and Structural works for large or small scale building projects.</p>
+              </div>
+
+              <div class="details">
+                <div class="details-image">
+                  <img src="Images/Icons/strategic-consulting.png" alt="">
+                </div>
+                <h2>Consultation</h2>
+                <p>Oversee and assess building costs and contracts for construction projects.</p>
+              </div>
+
+              <div class="details">
+                <div class="details-image">
+                  <img src="Images/Icons/management.png" alt="">
+                </div>
+                <h2>Project Management</h2>
+                <p>Coordination of a construction project, from pre-construction to completed structure.</p>
+              </div>
+              
+            </div>
+
+            <div class="home-about-btn">
+                <a href="Services.html" class="about-btn">Read More</a>
+            </div>
+        </section>
+      </div>
+
+        
+<!-- PROJECTS SECTION---------------------------------------------------------------------------------------
+ ----------------------------------------------------------------------------------------------------------- -->
+
+
+        <section class="proj-container">
+          <div class="home-projects-head">
+              <h1><span>Discover Our</span> Projects</h1>
+          </div>
+
+          <div class="home-projects">
+            <div class="proj-wrapper">
+              <img src="Images/Gallery/img-1.jpg" alt="4 Bedroom Mansion" width="100%" height="100%" class="projimg">
+              <div class="proj-details">
+                <h4>4 Bedroom Mansion</h4>
+                <p>Juja, Kiambu County</p>
+              </div>
+            </div>
+
+            <div class="proj-wrapper">
+              <img src="Images/Gallery/img-2.jpg" alt="Bellas College main Campus" width="100%" height="100%" class="projimg">
+              <div class="proj-details">
+                <h4>Bells College. Main Campus</h4>
+                <p>Nairobi West, Nairobi County</p>
+              </div>
+            </div>
+
+            <div class="proj-wrapper">
+              <img src="Images/Gallery/img-4.jpg" alt="Murang'a to Kangema Highway" width="100%" height="100%" class="projimg">
+              <div class="proj-details">
+                <h4>Gatanga Road</h4>
+                <p>Murang'a County</p>
+              </div>
+            </div>
+
+          </div>
+
+          <div class="home-about-btn">
+            <a href="Projects.html" class="about-btn">Show More</a>
+          </div>
+          
+        </section>
+
+
+<!-- SLOGAN SECTION----------------------------------------------------------------------------------------
+ ---------------------------------------------------------------------------------------------------------- -->
+
+        <div class="slogan-container">
+          <section class="slogan">
+              <h1>Actualizing <br>Your...<br><span>Dream</span></h1>
+              <div class="slogan-call">
+                  <h1>Call Us Today</h1>
+                  <!-- <a href="Contacts.html">Today!</a> -->
+                  <p>+254 725 770 167</p>
+                  <p>+254 721 949 591</p>
+              </div>
+          </section>
+        </div>
+        
+
+<!-- FOOTER SECTION----------------------------------------------------------------------------------------
+ ---------------------------------------------------------------------------------------------------------- -->
+
+        <div class="footer">
+            <section class="footer-content">
+                <div class="slot 1">
+                    <h3>For more information</h3>
+                    <p class="more-info" >Reach out to us via our contact details provided here or through our social media handles.</p>
+                    <div class="social-links">
+                        <a data-social="Facebook" href=""><svg role="img" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><title>Facebook</title><path d="M9.101 23.691v-7.98H6.627v-3.667h2.474v-1.58c0-4.085 1.848-5.978 5.858-5.978.401 0 .955.042 1.468.103a8.68 8.68 0 0 1 1.141.195v3.325a8.623 8.623 0 0 0-.653-.036 26.805 26.805 0 0 0-.733-.009c-.707 0-1.259.096-1.675.309a1.686 1.686 0 0 0-.679.622c-.258.42-.374.995-.374 1.752v1.297h3.919l-.386 2.103-.287 1.564h-3.246v8.245C19.396 23.238 24 18.179 24 12.044c0-6.627-5.373-12-12-12s-12 5.373-12 12c0 5.628 3.874 10.35 9.101 11.647Z"/></svg></a>
+                        <a data-social="X-Twitter" href=""><svg role="img" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><title>X</title><path d="M18.901 1.153h3.68l-8.04 9.19L24 22.846h-7.406l-5.8-7.584-6.638 7.584H.474l8.6-9.83L0 1.154h7.594l5.243 6.932ZM17.61 20.644h2.039L6.486 3.24H4.298Z"/></svg></a>
+                    </div>
+                </div>
+                
+                <div class="slot 2">
+                    <h3>Address<h3>
+                    <div class="contact-info-details">
+                        <div class="info-details">
+                          <img src="Images/Icons/location.png" class="info-icon" alt="">
+                          <p>152 Moi Drive, Nairobi</p>
+                        </div>
+
+                        <div class="info-details">
+                          <img src="Images/Icons/email.png" class="info-icon" alt="">
+                          <p>info@galinworksltd.co.ke</p>
+                        </div>
+
+                        <div class="info-details">
+                          <img src="Images/Icons/phone.png" class="info-icon" alt="">
+                          <p>+254 (0) 725 770 167 <br>+254 (0) 721 949 591</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="slot 3">
+                  <h3>Quick Links</h3>
+                  <div class="links-logo">
+                      <div class="q-links">
+                        <a href="index.html" class="home">Home</a>
+                        <a href="About.html" class="about">About Us</a>
+                        <a href="Services.html" class="services">Our Services</a>
+                        <a href="Projects.html" class="projects">Projects</a>
+                        <a href="Contacts.html" class="contacts">Contact Us</a>
+                      </div>
+                      <img src="Images/Galin-logo.png" alt="">
+                  </div>
+                </div>
+            </section>
+
+            <hr>
+            
+            <div class="footer-watermark">
+              <p class="copyright" >Copyright &copy; <script>document.write(new Date().getFullYear())</script> Galin Works Ltd</p>
+              <div class="bottom">
+                  <center>
+                      <p class="year"></p>
+                  </center>
+              </div>
+            </div>
+        </div>
+    </body>
+</html>
