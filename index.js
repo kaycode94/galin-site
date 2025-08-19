@@ -7,16 +7,16 @@ if(pageName === "index.html"){
     document.querySelector(".home").classList.add("activeLink");
 }
 
-if(pageName === "About.html"){
+if(pageName === "about.html"){
     document.querySelector(".about").classList.add("activeLink");
 }
-if(pageName === "Services.html"){
+if(pageName === "services.html"){
     document.querySelector(".services").classList.add("activeLink");
 }
-if(pageName === "Projects.html"){
+if(pageName === "projects.html"){
     document.querySelector(".projects").classList.add("activeLink");
 }
-if(pageName === "Contacts.html"){
+if(pageName === "contacts.html"){
     document.querySelector(".contacts").classList.add("activeLink");
 }
 
