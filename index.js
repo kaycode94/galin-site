@@ -58,7 +58,7 @@ inputs.forEach((input) => {
 });
 
 
-// CONTACTS PAGE____________________________________________________________________________________________
+// PROJECTS PAGE____________________________________________________________________________________________
 // _________________________________________________________________________________________________________
 // Filter Gallery
 
@@ -83,6 +83,39 @@ window.addEventListener('load',()=>{
     }
   })
 })
+
+
+
+const popup = document.querySelector('.popupImage');
+const closeBtn = document.getElementById('closePopup');
+
+if (popup && closeBtn) {
+  document.querySelectorAll('.gallery img').forEach(image => { 
+    image.onclick = () => {
+      popup.style.display = 'block';
+      popup.querySelector('img').src = image.getAttribute('src');
+    }
+  });
+
+  closeBtn.onclick = () => {
+    popup.style.display = 'none';
+  };
+}
+
+
+
+
+
+// document.querySelectorAll('.gallery img').forEach(image =>{
+//   image.onclick = () =>{
+//     document.querySelector('.popupImage').style.display = 'block';
+//     document.querySelector('.popupImage img').src = image.getAttribute('src');
+//   }
+// });
+
+// document.getElementById('closePopup').onclick = () => {
+//   document.querySelector('.popupImage').style.display = 'none';
+// }
 
 
 // FOOTER SECTION___________________________________________________________________________________________
@@ -144,6 +177,7 @@ sliderTabs.forEach((tab, index) => {
 
 updateIndicator(sliderTabs[0], 0);
 window.addEventListener("resize", () => updateIndicator(sliderTabs[swiper.activeIndex], 0));
+
 
 
 
